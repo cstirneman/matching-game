@@ -15,7 +15,7 @@ function startGame() {
     shuffleArray(imagePairs);
 
     imgBackEl.forEach((img, index) => {
-        img.src = "./images/question mark.png";
+        img.src = "./images/question-mark.png";
         img.alt = "question mark";
         img.onclick = () => flipCard(img, index);
     });
@@ -46,7 +46,7 @@ function checkMatch() {
             startGame();
         }
     } else {
-        card1.src = card2.src = "./images/question mark.png";
+        card1.src = card2.src = "./images/question-mark.png";
     }
     flippedCards = [];
 }

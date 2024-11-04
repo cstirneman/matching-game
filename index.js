@@ -29,7 +29,7 @@ function startGame() {
 
 function flipCard(card, index) {
     if (flippedCards.length < 2) {
-        card.src = "./img/" + imagePairs[index];
+        card.src = "./images/" + imagePairs[index];
         flippedCards.push(card);
         if (flippedCards.length === 2) {
             setTimeout(checkMatch, 1000);
@@ -46,7 +46,7 @@ function checkMatch() {
             startGame();
         }
     } else {
-        card1.src = card2.src = ".images/question mark.png";
+        card1.src = card2.src = "./images/question mark.png";
     }
     flippedCards = [];
 }

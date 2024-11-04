@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color: orange;
+    text-align: center;
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+#header-title {
+    font-size: 2vw;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px 2px black;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.img-back {
+    width: 10vw; 
+    height: 10vw; 
+    padding: 2vw; 
+    margin: 2vw; 
+    background-color: white;
+    object-fit: contain; 
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw; 
+}
+
+#startGame-button {
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 2vw; 
+    color: white;
+    cursor: pointer;
+    padding: 0vw 1vw; 
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .img-back {
+        width: 40vw;
+        height: 40vw;
+        padding: 4vw;
+        margin: 4vw;
+    }
+
+    #startGame-button {
+        font-size: 6vw;
+        padding: 2vw 5vw; 
+    }
+}
